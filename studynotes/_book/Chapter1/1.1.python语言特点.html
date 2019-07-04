@@ -425,6 +425,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8.2" data-path="../Chapter7/7.2.scrapy安装.html">
+            
+                <a href="../Chapter7/7.2.scrapy安装.html">
+            
+                    
+                    7.2.scrapy安装
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -579,6 +592,48 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="11python&#x8BED;&#x8A00;&#x7279;&#x70B9;">1.1.python&#x8BED;&#x8A00;&#x7279;&#x70B9;</h1>
+<p><strong>&#x52A8;&#x6001;&#x8BED;&#x8A00;</strong></p>
+<ul>
+<li>&#x7F16;&#x8BD1;&#x5668;&#x8FD8;&#x662F;&#x8FD0;&#x884C;&#x671F;&#x786E;&#x5B9A;&#x7C7B;&#x578B;</li>
+<li>python&#x662F;&#x5728;&#x8FD0;&#x884C;&#x671F;&#x786E;&#x5B9A;&#x7C7B;&#x578B;&#x7684;</li>
+</ul>
+<p><strong>&#x5F3A;&#x7C7B;&#x578B;</strong></p>
+<ul>
+<li>&#x4F1A;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x9690;&#x5F0F;&#x8F6C;&#x6362;</li>
+<li>python&#x662F;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;</li>
+</ul>
+<p><strong>&#x4F18;&#x7F3A;&#x70B9;</strong></p>
+<ul>
+<li>&#x80F6;&#x6C34;&#x8BED;&#x8A00;&#xFF0C;&#x8F6E;&#x5B50;&#x591A;&#xFF0C;&#x5E94;&#x7528;&#x5E7F;&#x6CDB;</li>
+<li>&#x8BED;&#x8A00;&#x7075;&#x6D3B;&#xFF0C;&#x751F;&#x4EA7;&#x529B;&#x9AD8;</li>
+<li>&#x6027;&#x80FD;&#x95EE;&#x9898;&#xFF0C;&#x4EE3;&#x7801;&#x7EF4;&#x62A4;&#xFF0C;python2/3&#x5DEE;&#x5F02;</li>
+</ul>
+<p><strong>&#x62E5;&#x6709;&#x81EA;&#x7701;&#x529F;&#x80FD;</strong></p>
+<ul>
+<li>&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x80FD;&#x591F;&#x83B7;&#x5F97;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;</li>
+<li>type()&#xFF0C;&#x5224;&#x65AD;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;</li>
+<li>dir()&#xFF0C; &#x5E26;&#x53C2;&#x6570;&#x65F6;&#x83B7;&#x5F97;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF1B;&#x4E0D;&#x5E26;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x8303;&#x56F4;&#x5185;&#x7684;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#x5217;&#x8868;</li>
+<li>isinstance()&#xFF0C;&#x5224;&#x65AD;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x662F;&#x5DF2;&#x77E5;&#x7C7B;&#x578B;</li>
+<li>hasattr()&#xFF0C;&#x5224;&#x65AD;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x5305;&#x542B;&#x5BF9;&#x5E94;&#x5C5E;&#x6027;</li>
+<li>getattr()&#xFF0C;&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;</li>
+<li>setattr()&#xFF0C; &#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;</li>
+</ul>
+<p><strong>&#x7334;&#x5B50;&#x8865;&#x4E01;</strong></p>
+<ul>
+<li>&#x7334;&#x5B50;&#x8865;&#x4E01;&#x662F;&#x7A0B;&#x5E8F;&#x5728;&#x672C;&#x5730;&#x6269;&#x5C55;&#x6216;&#x4FEE;&#x6539;&#x652F;&#x6301;&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF08;&#x4EC5;&#x5F71;&#x54CD;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#x5B9E;&#x4F8B;&#xFF09;</li>
+<li>&#x6240;&#x8C13;mankey patch &#x5C31;&#x662F;&#x8FD0;&#x884C;&#x65F6;&#x66FF;&#x6362;</li>
+<li>&#x6BD4;&#x5982;gevent&#x5E93;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x5185;&#x7F6E;&#x7684;socket</li>
+<li>from gevent import monkey&#xFF1B;
+monkey.patch_socket()
+&#x5C06;&#x963B;&#x585E;soket&#x66FF;&#x6362;&#x6210;&#x975E;&#x963B;&#x585E;socket</li>
+</ul>
+<p><strong>&#x9E2D;&#x5B50;&#x7C7B;&#x578B;</strong></p>
+<ul>
+<li>&#x5982;&#x679C;&#x91CC;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x9E1F;&#xFF0C;&#x8D70;&#x8D77;&#x6765;&#x50CF;&#x9E2D;&#x5B50;&#xFF0C;&#x53EB;&#x8D77;&#x6765;&#x50CF;&#x9E2D;&#x5B50;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C31;&#x662F;&#x9E2D;&#x5B50;</li>
+<li>&#x66F4;&#x5173;&#x6CE8;&#x63A5;&#x53E3;</li>
+</ul>
+<hr>
+<h2 id=""> </h2>
 
                                 
                                 </section>
@@ -622,7 +677,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.1.python语言特点","level":"1.2.1","depth":2,"next":{"title":"1.2.python2-3差异","level":"1.2.2","depth":2,"path":"Chapter1/1.2.python2-3差异.md","ref":"Chapter1/1.2.python2-3差异.md","articles":[]},"previous":{"title":"1.python语言","level":"1.2","depth":1,"path":"Chapter1/1.python语言.md","ref":"Chapter1/1.python语言.md","articles":[{"title":"1.1.python语言特点","level":"1.2.1","depth":2,"path":"Chapter1/1.1.python语言特点.md","ref":"Chapter1/1.1.python语言特点.md","articles":[]},{"title":"1.2.python2-3差异","level":"1.2.2","depth":2,"path":"Chapter1/1.2.python2-3差异.md","ref":"Chapter1/1.2.python2-3差异.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/1.1.python语言特点.md","mtime":"2019-07-04T15:44:01.429Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T15:52:09.702Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.1.python语言特点","level":"1.2.1","depth":2,"next":{"title":"1.2.python2-3差异","level":"1.2.2","depth":2,"path":"Chapter1/1.2.python2-3差异.md","ref":"Chapter1/1.2.python2-3差异.md","articles":[]},"previous":{"title":"1.python语言","level":"1.2","depth":1,"path":"Chapter1/1.python语言.md","ref":"Chapter1/1.python语言.md","articles":[{"title":"1.1.python语言特点","level":"1.2.1","depth":2,"path":"Chapter1/1.1.python语言特点.md","ref":"Chapter1/1.1.python语言特点.md","articles":[]},{"title":"1.2.python2-3差异","level":"1.2.2","depth":2,"path":"Chapter1/1.2.python2-3差异.md","ref":"Chapter1/1.2.python2-3差异.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/1.1.python语言特点.md","mtime":"2019-07-04T16:06:26.701Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T16:13:10.851Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -630,10 +685,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
