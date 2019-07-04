@@ -425,6 +425,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8.2" data-path="../Chapter7/7.2.scrapy安装.html">
+            
+                <a href="../Chapter7/7.2.scrapy安装.html">
+            
+                    
+                    7.2.scrapy安装
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -579,6 +592,25 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="81&#x4EC0;&#x4E48;&#x662F;wsgi">8.1.&#x4EC0;&#x4E48;&#x662F;WSGI</h1>
+<h2 id="81&#x4EC0;&#x4E48;&#x662F;wsgi">8.1.&#x4EC0;&#x4E48;&#x662F;WSGI</h2>
+<ul>
+<li>python web server gateway interface</li>
+<li>&#x89E3;&#x51B3;&#x4E86;python webserver&#x4E71;&#x8C61; mode&#x2014;&#x2014;python&#xFF0C;CGI&#x3002;fastCGI</li>
+<li>&#x63CF;&#x8FF0;&#x4E86;web server &#x5982;&#x4F55;&#x4E0E;web&#x6846;&#x67B6;&#x4EA4;&#x4E92;&#xFF0C;web&#x6846;&#x67B6;&#x5982;&#x4F55;&#x8BF7;&#x6C42;&#x5904;&#x7406;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment">#&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;wsgi&#x5E94;&#x7528;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">myapp</span><span class="hljs-params">(environ, start_resopnce)</span>:</span>
+    status = <span class="hljs-string">&apos;200 OK&apos;</span>
+    header = [(<span class="hljs-string">&apos;Conten-Typr&apos;</span>, <span class="hljs-string">&apos;text/html;charset=utf-8&apos;</span>)]
+    start_resopnce(status, header)
+    <span class="hljs-keyword">return</span> [<span class="hljs-string">b&apos;&lt;h1&gt;Hello world&lt;/h1&gt;&apos;</span>]
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:
+    <span class="hljs-keyword">from</span> wsgiref.simple_server <span class="hljs-keyword">import</span> make_server
+    httpd = make_server(<span class="hljs-string">&apos;127.0.0.1&apos;</span>, <span class="hljs-number">8888</span>, myapp)
+    httpd.serve_forever()
+</code></pre>
 
                                 
                                 </section>
@@ -622,7 +654,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"8.1.什么是WSGI","level":"1.9.1","depth":2,"next":{"title":"8.2.常用pythonweb框架","level":"1.9.2","depth":2,"path":"Chapter8/8.2.常用pythonweb框架.md","ref":"Chapter8/8.2.常用pythonweb框架.md","articles":[]},"previous":{"title":"8.框架语言","level":"1.9","depth":1,"path":"Chapter8/8.框架语言.md","ref":"Chapter8/8.框架语言.md","articles":[{"title":"8.1.什么是WSGI","level":"1.9.1","depth":2,"path":"Chapter8/8.1.什么是WSGI.md","ref":"Chapter8/8.1.什么是WSGI.md","articles":[]},{"title":"8.2.常用pythonweb框架","level":"1.9.2","depth":2,"path":"Chapter8/8.2.常用pythonweb框架.md","ref":"Chapter8/8.2.常用pythonweb框架.md","articles":[]},{"title":"8.3.RESTful","level":"1.9.3","depth":2,"path":"Chapter8/8.3.RESTful.md","ref":"Chapter8/8.3.RESTful.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter8/8.1.什么是WSGI.md","mtime":"2019-07-04T15:44:01.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T15:52:09.702Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"8.1.什么是WSGI","level":"1.9.1","depth":2,"next":{"title":"8.2.常用pythonweb框架","level":"1.9.2","depth":2,"path":"Chapter8/8.2.常用pythonweb框架.md","ref":"Chapter8/8.2.常用pythonweb框架.md","articles":[]},"previous":{"title":"8.框架语言","level":"1.9","depth":1,"path":"Chapter8/8.框架语言.md","ref":"Chapter8/8.框架语言.md","articles":[{"title":"8.1.什么是WSGI","level":"1.9.1","depth":2,"path":"Chapter8/8.1.什么是WSGI.md","ref":"Chapter8/8.1.什么是WSGI.md","articles":[]},{"title":"8.2.常用pythonweb框架","level":"1.9.2","depth":2,"path":"Chapter8/8.2.常用pythonweb框架.md","ref":"Chapter8/8.2.常用pythonweb框架.md","articles":[]},{"title":"8.3.RESTful","level":"1.9.3","depth":2,"path":"Chapter8/8.3.RESTful.md","ref":"Chapter8/8.3.RESTful.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter8/8.1.什么是WSGI.md","mtime":"2019-07-04T16:06:26.701Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T16:13:10.851Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -630,10 +662,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

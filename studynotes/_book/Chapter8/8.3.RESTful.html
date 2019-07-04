@@ -425,6 +425,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8.2" data-path="../Chapter7/7.2.scrapy安装.html">
+            
+                <a href="../Chapter7/7.2.scrapy安装.html">
+            
+                    
+                    7.2.scrapy安装
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -579,6 +592,37 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="83restful">8.3.RESTful</h1>
+<ul>
+<li>&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x7684;&#x610F;&#x4E49;&#x548C;&#x65B9;&#x5F0F;</li>
+<li>&#x4EC0;&#x4E48;&#x662F;RESTful</li>
+<li>&#x5982;&#x4F55;&#x8BBE;&#x8BA1;RESTful API</li>
+</ul>
+<p>&#x524D;&#x540E;&#x7AEF;&#x89E3;&#x8026;&#xFF0C;&#x63A5;&#x53E3;&#x590D;&#x7528;&#xFF0C;&#x51CF;&#x5C11;&#x5F00;&#x53D1;&#x91CF;
+&#x5404;&#x53F8;&#x5176;&#x804C;&#xFF0C;&#x524D;&#x540E;&#x7AEF;&#x540C;&#x6B65;&#x5F00;&#x53D1;&#xFF0C;&#x63D0;&#x5347;&#x5DE5;&#x4F5C;&#x6548;&#x7387;&#xFF0C;&#x5B9A;&#x4E49;&#x597D;&#x63A5;&#x53E3;&#x89C4;&#x8303;
+&#x66F4;&#x6709;&#x5229;&#x4E8E;&#x8C03;&#x8BD5;(mock)&#x6D4B;&#x8BD5;&#x548C;&#x8FD0;&#x7EF4;&#x90E8;&#x7F72;</p>
+<p><strong>representtational state transfer</strong>
+&#x8868;&#x73B0;&#x5C42;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#xFF0C;&#x7531;HTTP&#x534F;&#x8BAE;&#x7684;&#x4E3B;&#x8981;&#x8BBE;&#x8BA1;&#x8005;RoyFielding&#x63D0;&#x51FA;
+&#x8D44;&#x6E90;(resources)&#xFF0C;&#x8868;&#x73B0;&#x5C42;(representation)&#xFF0C;&#x72B6;&#x6001;&#x8F6C;&#x5316;(statr transfer)
+&#x662F;&#x4E00;&#x79CD;&#x4EE5;&#x8D44;&#x6E90;&#x4E3A;&#x4E3A;&#x4E2D;&#x5FC3;&#x7684;web&#x8F6F;&#x4EF6;&#x67B6;&#x6784;&#x98CE;&#x683C;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;ajax&#x548C;resful web&#x670D;&#x52A1;&#x6784;&#x5EFA;&#x5E94;&#x7528;</p>
+<ul>
+<li>resources&#xFF1A;&#x4F7F;&#x7528;url&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;</li>
+<li>representation&#xFF1A;&#x8D44;&#x6E90;&#x7684;&#x8868;&#x73B0;&#x5F62;&#x5F0F;&#xFF0C;&#x6BD4;&#x5982;&#x56FE;&#x7247;&#xFF0C;HTML&#x6587;&#x672C;&#x7B49;</li>
+<li>statr transfer&#x72B6;&#x6001;&#x8F6C;&#x5316;&#xFF1A;get&#xFF0C;post&#xFF0C;putdelete http&#x52A8;&#x8BCD;&#x6765;&#x64CD;&#x4F5C;&#x8D44;&#x6E90;&#xFF0C;&#x5B9E;&#x73B0;&#x8D44;&#x6E90;&#x7684;&#x6539;&#x53D8;</li>
+</ul>
+<p><strong>resful&#x7684;&#x51C6;&#x5219;</strong>
+&#x6240;&#x6709;&#x601D;&#x7EF4;u&#x62BD;&#x8C61;&#x56F4;&#x6BB4;&#x81F3;&#x4E8E;&#x90A3;&#xFF0C;&#x8D44;&#x6E90;&#x5BF9;&#x5E94;&#x552F;&#x4E00;&#x7684;&#x6807;&#x8BC6;
+&#x8D44;&#x6E90;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x5B9E;&#x73B0;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#xFF0C;&#x64CD;&#x4F5C;&#x672C;&#x8EAB;&#x65E0;&#x72B6;&#x6001;
+&#x5BF9;&#x4E4B;u&#x6309;&#x7684;&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x8D44;&#x6E90;&#x7684;&#x6807;&#x8BC6;</p>
+<p><strong>restful api</strong>
+&#x901A;&#x8FC7;get&#xFF0C;post&#xFF0C;put delete http &#x83B7;&#x53D6;/&#x65B0;&#x7586;/&#x66F4;&#x65B0;/&#x5220;&#x9664;
+&#x4E00;&#x822C;&#x4F7F;&#x7528;json&#x683C;&#x5F0F;&#x8FD4;&#x56DE;&#x6570;&#x636E;
+&#x4E00;&#x822C;web&#x6846;&#x67B6;&#x90FD;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x63D2;&#x4EF6;&#x652F;&#x6301;resfulapi</p>
+<p><strong>&#x4EC0;&#x4E48;&#x662F;https</strong></p>
+<ul>
+<li>https&#x548C;http&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;</li>
+<li>&#x4EC0;&#x4E48;&#x662F;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x548C;&#x975E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6; </li>
+</ul>
+<hr>
 
                                 
                                 </section>
@@ -622,7 +666,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"8.3.RESTful","level":"1.9.3","depth":2,"next":{"title":"9.web高并发、分布式技术","level":"1.10","depth":1,"path":"Chapter9/9.web高并发、分布式技术.md","ref":"Chapter9/9.web高并发、分布式技术.md","articles":[{"title":"9.1.什么是微服务？","level":"1.10.1","depth":2,"path":"Chapter9/9.1.什么是微服务.md","ref":"Chapter9/9.1.什么是微服务.md","articles":[]},{"title":"9.2.网络IO","level":"1.10.2","depth":2,"path":"Chapter9/9.2.网络IO.md","ref":"Chapter9/9.2.网络IO.md","articles":[]}]},"previous":{"title":"8.2.常用pythonweb框架","level":"1.9.2","depth":2,"path":"Chapter8/8.2.常用pythonweb框架.md","ref":"Chapter8/8.2.常用pythonweb框架.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter8/8.3.RESTful.md","mtime":"2019-07-04T15:44:01.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T15:52:09.702Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"8.3.RESTful","level":"1.9.3","depth":2,"next":{"title":"9.web高并发、分布式技术","level":"1.10","depth":1,"path":"Chapter9/9.web高并发、分布式技术.md","ref":"Chapter9/9.web高并发、分布式技术.md","articles":[{"title":"9.1.什么是微服务？","level":"1.10.1","depth":2,"path":"Chapter9/9.1.什么是微服务.md","ref":"Chapter9/9.1.什么是微服务.md","articles":[]},{"title":"9.2.网络IO","level":"1.10.2","depth":2,"path":"Chapter9/9.2.网络IO.md","ref":"Chapter9/9.2.网络IO.md","articles":[]}]},"previous":{"title":"8.2.常用pythonweb框架","level":"1.9.2","depth":2,"path":"Chapter8/8.2.常用pythonweb框架.md","ref":"Chapter8/8.2.常用pythonweb框架.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter8/8.3.RESTful.md","mtime":"2019-07-04T16:06:26.701Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T16:13:10.851Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -630,10 +674,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
