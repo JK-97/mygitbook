@@ -1,0 +1,746 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.2.scrapy安装 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter8/8.框架语言.html" />
+    
+    
+    <link rel="prev" href="7.1.技术储备.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    studynotes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../studynote/Chapter1/1.python语言.html">
+            
+                <a href="../studynote/Chapter1/1.python语言.html">
+            
+                    
+                    1.python语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../Chapter1/1.1.python语言特点.html">
+            
+                <a href="../Chapter1/1.1.python语言特点.html">
+            
+                    
+                    1.1.python语言特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../Chapter1/1.2.python2-3差异.html">
+            
+                <a href="../Chapter1/1.2.python2-3差异.html">
+            
+                    
+                    1.2.python2-3差异
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Chapter2/2.算法与数据结构.html">
+            
+                <a href="../Chapter2/2.算法与数据结构.html">
+            
+                    
+                    2.算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../Chapter2/2.1.排序算法.html">
+            
+                <a href="../Chapter2/2.1.排序算法.html">
+            
+                    
+                    2.1.排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../Chapter2/2.2.数据结构.html">
+            
+                <a href="../Chapter2/2.2.数据结构.html">
+            
+                    
+                    2.2.数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Chapter3/3.编程范式.html">
+            
+                <a href="../Chapter3/3.编程范式.html">
+            
+                    
+                    3.编程范式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../Chapter3/3.1.装饰器.html">
+            
+                <a href="../Chapter3/3.1.装饰器.html">
+            
+                    
+                    3.1.装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../Chapter3/3.2.面向对象.html">
+            
+                <a href="../Chapter3/3.2.面向对象.html">
+            
+                    
+                    3.2.面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Chapter4/4.网络协议.html">
+            
+                <a href="../Chapter4/4.网络协议.html">
+            
+                    
+                    4.网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../Chapter4/4.1.基本概念.html">
+            
+                <a href="../Chapter4/4.1.基本概念.html">
+            
+                    
+                    4.1.基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../Chapter4/4.2.HTTP协议.html">
+            
+                <a href="../Chapter4/4.2.HTTP协议.html">
+            
+                    
+                    4.2.HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Chapter5/5.Linux相关.html">
+            
+                <a href="../Chapter5/5.Linux相关.html">
+            
+                    
+                    5.Linux相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../Chapter5/5.1.Linux储备.html">
+            
+                <a href="../Chapter5/5.1.Linux储备.html">
+            
+                    
+                    5.1.Linux储备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../Chapter5/5.2.操作系统内存管理机制.html">
+            
+                <a href="../Chapter5/5.2.操作系统内存管理机制.html">
+            
+                    
+                    5.2.操作系统内存管理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../Chapter5/5.3.操作系统线程和进程常考题.html">
+            
+                <a href="../Chapter5/5.3.操作系统线程和进程常考题.html">
+            
+                    
+                    5.3.操作系统线程和进程常考题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Chapter6/6.数据库.html">
+            
+                <a href="../Chapter6/6.数据库.html">
+            
+                    
+                    6.数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../Chapter6/6.1.数据库种类.html">
+            
+                <a href="../Chapter6/6.1.数据库种类.html">
+            
+                    
+                    6.1.数据库种类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../Chapter6/6.2.MYSQL.html">
+            
+                <a href="../Chapter6/6.2.MYSQL.html">
+            
+                    
+                    6.2.MYSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../Chapter6/6.3.Redis.html">
+            
+                <a href="../Chapter6/6.3.Redis.html">
+            
+                    
+                    6.3.Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="7.爬虫.html">
+            
+                <a href="7.爬虫.html">
+            
+                    
+                    7.爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="7.1.技术储备.html">
+            
+                <a href="7.1.技术储备.html">
+            
+                    
+                    7.1.技术储备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7.2" data-path="7.2.scrapy安装.html">
+            
+                <a href="7.2.scrapy安装.html">
+            
+                    
+                    7.2.scrapy安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Chapter8/8.框架语言.html">
+            
+                <a href="../Chapter8/8.框架语言.html">
+            
+                    
+                    8.框架语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../Chapter8/8.1.什么是WSGI.html">
+            
+                <a href="../Chapter8/8.1.什么是WSGI.html">
+            
+                    
+                    8.1.什么是WSGI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../Chapter8/8.2.常用pythonweb框架.html">
+            
+                <a href="../Chapter8/8.2.常用pythonweb框架.html">
+            
+                    
+                    8.2.常用pythonweb框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../Chapter8/8.3.RESTful.html">
+            
+                <a href="../Chapter8/8.3.RESTful.html">
+            
+                    
+                    8.3.RESTful
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Chapter9/9.web高并发、分布式技术.html">
+            
+                <a href="../Chapter9/9.web高并发、分布式技术.html">
+            
+                    
+                    9.web高并发、分布式技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../Chapter9/9.1.什么是微服务.html">
+            
+                <a href="../Chapter9/9.1.什么是微服务.html">
+            
+                    
+                    9.1.什么是微服务？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="../Chapter9/9.2.网络IO.html">
+            
+                <a href="../Chapter9/9.2.网络IO.html">
+            
+                    
+                    9.2.网络IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../python_asyncio_coding/">
+            
+                <a href="../../python_asyncio_coding/">
+            
+                    
+                    python_asyncio_coding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >7.2.scrapy安装</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="72scrapy&#x5B89;&#x88C5;">7.2.scrapy&#x5B89;&#x88C5;</h1>
+<h3 id="721&#x542F;&#x52A8;&#x9879;&#x76EE;">7.2.1&#x542F;&#x52A8;&#x9879;&#x76EE;</h3>
+<p>&#x865A;&#x62DF;&#x73AF;&#x5883;&#x5B89;&#x88C5;&#x597D;&#x540E;&#xFF0C;&#x5728;windows&#x7CFB;&#x7EDF;&#x4E2D;&#x8FD8;&#x9700;&#x5B89;&#x88C5;pypiwin32&#x5E93;&#xFF0C;&#x5B89;&#x88C5;&#x597D;&#x540E;&#xFF0C;&#x5728;cmd&#x4E2D;&#x8F93;&#x5165;</p>
+<pre><code class="lang-c">scrapy startproject ArticleSpider               <span class="hljs-meta">#&#x521B;&#x5EFA;&#x9879;&#x76EE;</span>
+scrapy genspider jobbloe web.jobble.com         <span class="hljs-meta">#&#x5728;&#x9879;&#x76EE;&#x4E8E;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x521B;&#x5EFA;&#x722C;&#x866B;</span>
+</code></pre>
+<p>&#x7531;&#x4E8E;pycharm&#x4E2D;&#x6CA1;&#x6709;scrapy&#x7684;&#x6A21;&#x677F;&#xFF0C;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x4E3B;&#x811A;&#x672C;&#x542F;&#x52A8;&#x8C03;&#x8BD5;&#x722C;&#x866B;&#xFF0C;&#x5728;&#x4E3B;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> scrapy.cmdline <span class="hljs-keyword">import</span> execute
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">import</span> os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+execute([<span class="hljs-string">&apos;scrapy&apos;</span>,<span class="hljs-string">&apos;crawl&apos;</span>,<span class="hljs-string">&apos;jobbole&apos;</span>])    <span class="hljs-comment">#&#x76F8;&#x5F53;&#x4E8E;&#x5728;cmd&#x7A97;&#x53E3;&#x6267;&#x884C;   scrapy crawl jobble</span>
+</code></pre>
+<h2 id="722xpath">7.2.2xpath</h2>
+<p>&#x7B80;&#x4ECB;
+&#x4F7F;&#x7528;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x5728;xml&#x548C;html&#x4E2D;&#x8FDB;&#x884C;&#x5BFC;&#x822A;
+xpath&#x5305;&#x542B;&#x6807;&#x51C6;&#x51FD;&#x6570;&#x5E93;
+xpath&#x65F6;&#x4E00;&#x4E2A;w3c&#x6807;&#x51C6;</p>
+<p>&#x8282;&#x70B9;&#x5173;&#x7CFB;
+&#x7236;&#x8282;&#x70B9;
+&#x5B50;&#x8282;&#x70B9;
+&#x540C;&#x80DE;&#x8282;&#x70B9;
+&#x5148;&#x8F88;&#x8282;&#x70B9;
+&#x540E;&#x4EE3;&#x8282;&#x70B9;</p>
+<p>xpath&#x8BED;&#x6CD5;</p>
+<blockquote>
+<p><img src="https://jk-97.github.io/my_note/sources/index_xpath&#x8BED;&#x6CD5;.png" alt="xpath ">
+<img src="https://jk-97.github.io/my_note/sources/index_xpath&#x8BED;&#x6CD5;_.png" alt="xpath ">
+<img src="https://jk-97.github.io/my_note/sources/index_xpath_&#x8C13;&#x8BED;.png" alt="xpath "></p>
+</blockquote>
+<p>&#x5728;&#x4F2F;&#x4E50;&#x5728;&#x7EBF;&#x9009;&#x53D6;&#x4E00;&#x7BC7;&#x7F51;&#x7AD9;&#xFF0C;&#x4F7F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x590D;&#x5236;xpth&#x8DEF;&#x5F84;&#x586B;&#x5165;
+&#x706B;&#x72D0;&#x6D4F;&#x89C8;&#x5668;&#x548C;chrome&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x53EF;&#x80FD;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x706B;&#x72D0;&#x7684;&#x590D;&#x5236;xpath&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x8FD0;&#x884C;&#x7F51;&#x9875;&#x4EE3;&#x7801;&#x4E4B;&#x540E;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x5176;&#x4E2D;&#x6709;js&#x751F;&#x6210;&#x7684;&#x5143;&#x7D20;&#x3002;
+0</p>
+<pre><code class="lang-python"><span class="hljs-comment">#jobbole.py</span>
+start_urls = [<span class="hljs-string">&apos;http://blog.jobbole.com/114666/&apos;</span>]
+&#xB7;&#xB7;&#xB7;
+strs = <span class="hljs-string">&apos;//*[@id=&quot;post-114666&quot;]/div[1]/h1/text()&apos;</span>
+re_selector = response.xpath(strs)
+xpath(<span class="hljs-string">&quot;//span[contains(@class,&apos;xxxx&apos;)]&quot;</span>)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.1.技术储备.html" class="navigation navigation-prev " aria-label="Previous page: 7.1.技术储备">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter8/8.框架语言.html" class="navigation navigation-next " aria-label="Next page: 8.框架语言">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.2.scrapy安装","level":"1.2.7.2","depth":3,"next":{"title":"8.框架语言","level":"1.2.8","depth":2,"path":"studynotes/Chapter8/8.框架语言.md","ref":"studynotes/Chapter8/8.框架语言.md","articles":[{"title":"8.1.什么是WSGI","level":"1.2.8.1","depth":3,"path":"studynotes/Chapter8/8.1.什么是WSGI.md","ref":"studynotes/Chapter8/8.1.什么是WSGI.md","articles":[]},{"title":"8.2.常用pythonweb框架","level":"1.2.8.2","depth":3,"path":"studynotes/Chapter8/8.2.常用pythonweb框架.md","ref":"studynotes/Chapter8/8.2.常用pythonweb框架.md","articles":[]},{"title":"8.3.RESTful","level":"1.2.8.3","depth":3,"path":"studynotes/Chapter8/8.3.RESTful.md","ref":"studynotes/Chapter8/8.3.RESTful.md","articles":[]}]},"previous":{"title":"7.1.技术储备","level":"1.2.7.1","depth":3,"path":"studynotes/Chapter7/7.1.技术储备.md","ref":"studynotes/Chapter7/7.1.技术储备.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"studynotes/Chapter7/7.2.scrapy安装.md","mtime":"2019-07-04T16:12:53.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T17:18:44.613Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

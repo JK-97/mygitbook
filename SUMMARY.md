@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [studynotes](studynotes/README.md* [前言](README.md)
+* [studynotes](studynotes/README.md)
     * [1.python语言](studynotes/studynote/Chapter1/1.python语言.md)
         * [1.1.python语言特点](studynotes/Chapter1/1.1.python语言特点.md)
         * [1.2.python2-3差异](studynotes/Chapter1/1.2.python2-3差异.md)
@@ -32,5 +32,5 @@
     * [9.web高并发、分布式技术](studynotes/Chapter9/9.web高并发、分布式技术.md)
         * [9.1.什么是微服务？](studynotes/Chapter9/9.1.什么是微服务.md)
         * [9.2.网络IO](studynotes/Chapter9/9.2.网络IO.md)
-
 * [python_asyncio_coding](python_asyncio_coding/README.md)
+

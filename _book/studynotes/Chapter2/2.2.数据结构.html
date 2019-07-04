@@ -1,0 +1,787 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.2.数据结构 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter3/3.编程范式.html" />
+    
+    
+    <link rel="prev" href="2.1.排序算法.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    studynotes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../studynote/Chapter1/1.python语言.html">
+            
+                <a href="../studynote/Chapter1/1.python语言.html">
+            
+                    
+                    1.python语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../Chapter1/1.1.python语言特点.html">
+            
+                <a href="../Chapter1/1.1.python语言特点.html">
+            
+                    
+                    1.1.python语言特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../Chapter1/1.2.python2-3差异.html">
+            
+                <a href="../Chapter1/1.2.python2-3差异.html">
+            
+                    
+                    1.2.python2-3差异
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2.算法与数据结构.html">
+            
+                <a href="2.算法与数据结构.html">
+            
+                    
+                    2.算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="2.1.排序算法.html">
+            
+                <a href="2.1.排序算法.html">
+            
+                    
+                    2.1.排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.2" data-path="2.2.数据结构.html">
+            
+                <a href="2.2.数据结构.html">
+            
+                    
+                    2.2.数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Chapter3/3.编程范式.html">
+            
+                <a href="../Chapter3/3.编程范式.html">
+            
+                    
+                    3.编程范式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../Chapter3/3.1.装饰器.html">
+            
+                <a href="../Chapter3/3.1.装饰器.html">
+            
+                    
+                    3.1.装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../Chapter3/3.2.面向对象.html">
+            
+                <a href="../Chapter3/3.2.面向对象.html">
+            
+                    
+                    3.2.面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Chapter4/4.网络协议.html">
+            
+                <a href="../Chapter4/4.网络协议.html">
+            
+                    
+                    4.网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../Chapter4/4.1.基本概念.html">
+            
+                <a href="../Chapter4/4.1.基本概念.html">
+            
+                    
+                    4.1.基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../Chapter4/4.2.HTTP协议.html">
+            
+                <a href="../Chapter4/4.2.HTTP协议.html">
+            
+                    
+                    4.2.HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Chapter5/5.Linux相关.html">
+            
+                <a href="../Chapter5/5.Linux相关.html">
+            
+                    
+                    5.Linux相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../Chapter5/5.1.Linux储备.html">
+            
+                <a href="../Chapter5/5.1.Linux储备.html">
+            
+                    
+                    5.1.Linux储备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../Chapter5/5.2.操作系统内存管理机制.html">
+            
+                <a href="../Chapter5/5.2.操作系统内存管理机制.html">
+            
+                    
+                    5.2.操作系统内存管理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../Chapter5/5.3.操作系统线程和进程常考题.html">
+            
+                <a href="../Chapter5/5.3.操作系统线程和进程常考题.html">
+            
+                    
+                    5.3.操作系统线程和进程常考题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Chapter6/6.数据库.html">
+            
+                <a href="../Chapter6/6.数据库.html">
+            
+                    
+                    6.数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../Chapter6/6.1.数据库种类.html">
+            
+                <a href="../Chapter6/6.1.数据库种类.html">
+            
+                    
+                    6.1.数据库种类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../Chapter6/6.2.MYSQL.html">
+            
+                <a href="../Chapter6/6.2.MYSQL.html">
+            
+                    
+                    6.2.MYSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../Chapter6/6.3.Redis.html">
+            
+                <a href="../Chapter6/6.3.Redis.html">
+            
+                    
+                    6.3.Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Chapter7/7.爬虫.html">
+            
+                <a href="../Chapter7/7.爬虫.html">
+            
+                    
+                    7.爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../Chapter7/7.1.技术储备.html">
+            
+                <a href="../Chapter7/7.1.技术储备.html">
+            
+                    
+                    7.1.技术储备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../Chapter7/7.2.scrapy安装.html">
+            
+                <a href="../Chapter7/7.2.scrapy安装.html">
+            
+                    
+                    7.2.scrapy安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Chapter8/8.框架语言.html">
+            
+                <a href="../Chapter8/8.框架语言.html">
+            
+                    
+                    8.框架语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../Chapter8/8.1.什么是WSGI.html">
+            
+                <a href="../Chapter8/8.1.什么是WSGI.html">
+            
+                    
+                    8.1.什么是WSGI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../Chapter8/8.2.常用pythonweb框架.html">
+            
+                <a href="../Chapter8/8.2.常用pythonweb框架.html">
+            
+                    
+                    8.2.常用pythonweb框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../Chapter8/8.3.RESTful.html">
+            
+                <a href="../Chapter8/8.3.RESTful.html">
+            
+                    
+                    8.3.RESTful
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Chapter9/9.web高并发、分布式技术.html">
+            
+                <a href="../Chapter9/9.web高并发、分布式技术.html">
+            
+                    
+                    9.web高并发、分布式技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../Chapter9/9.1.什么是微服务.html">
+            
+                <a href="../Chapter9/9.1.什么是微服务.html">
+            
+                    
+                    9.1.什么是微服务？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="../Chapter9/9.2.网络IO.html">
+            
+                <a href="../Chapter9/9.2.网络IO.html">
+            
+                    
+                    9.2.网络IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../python_asyncio_coding/">
+            
+                <a href="../../python_asyncio_coding/">
+            
+                    
+                    python_asyncio_coding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2.2.数据结构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="22&#x6570;&#x636E;&#x7ED3;&#x6784;">2.2.&#x6570;&#x636E;&#x7ED3;&#x6784;</h1>
+<p><strong>&#x94FE;&#x8868;</strong></p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">reverseList</span><span class="hljs-params">(self, head: ListNode)</span> -&gt; ListNode:</span>
+        pre =<span class="hljs-keyword">None</span>
+        cur = head
+        <span class="hljs-keyword">while</span> cur:
+            nextnode = cur.next
+            cur.next = pre
+            pre = cur 
+            cur = nextnode
+        <span class="hljs-keyword">return</span> pre
+</code></pre>
+<p><strong>&#x961F;&#x5217;</strong></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> deque
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Queue</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.item = deque()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">append</span><span class="hljs-params">(self, val)</span>:</span>
+        <span class="hljs-keyword">return</span> self.item.append(val)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pop</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.item.popleft()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">empty</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> len(self.item) == <span class="hljs-number">0</span>
+</code></pre>
+<p><strong>&#x6808;</strong></p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinStack</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        initialize your data structure here.
+        &quot;&quot;&quot;</span>
+        self.stack=[]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">push</span><span class="hljs-params">(self, x: int)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        self.stack.append(x)
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pop</span><span class="hljs-params">(self)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        self.stack.pop()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">top</span><span class="hljs-params">(self)</span> -&gt; int:</span>
+        <span class="hljs-keyword">return</span> self.stack[<span class="hljs-number">-1</span>]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getMin</span><span class="hljs-params">(self)</span> -&gt; int:</span>
+        <span class="hljs-keyword">return</span> min(self.stack)
+
+
+<span class="hljs-comment"># Your MinStack object will be instantiated and called as such:</span>
+<span class="hljs-comment"># obj = MinStack()</span>
+<span class="hljs-comment"># obj.push(x)</span>
+<span class="hljs-comment"># obj.pop()</span>
+<span class="hljs-comment"># param_3 = obj.top()</span>
+<span class="hljs-comment"># param_4 = obj.getMin()</span>
+</code></pre>
+<p><strong>&#x6811;</strong></p>
+<pre><code class="lang-python"><span class="hljs-comment"># Definition for a binary tree node.</span>
+<span class="hljs-comment"># class TreeNode:</span>
+<span class="hljs-comment">#     def __init__(self, x):</span>
+<span class="hljs-comment">#         self.val = x</span>
+<span class="hljs-comment">#         self.left = None</span>
+<span class="hljs-comment">#         self.right = None</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">maxDepth</span><span class="hljs-params">(self, root: TreeNode)</span> -&gt; int:</span>
+        stack = []
+        <span class="hljs-keyword">if</span> root <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+            stack.append((<span class="hljs-number">1</span>, root))
+
+        depth = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">while</span> stack != []:
+            current_depth, root = stack.pop()
+            <span class="hljs-keyword">if</span> root <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+                depth = max(depth, current_depth)
+                stack.append((current_depth + <span class="hljs-number">1</span>, root.left))
+                stack.append((current_depth + <span class="hljs-number">1</span>, root.right))
+
+        <span class="hljs-keyword">return</span> depth
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2.1.排序算法.html" class="navigation navigation-prev " aria-label="Previous page: 2.1.排序算法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter3/3.编程范式.html" class="navigation navigation-next " aria-label="Next page: 3.编程范式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.2.数据结构","level":"1.2.2.2","depth":3,"next":{"title":"3.编程范式","level":"1.2.3","depth":2,"path":"studynotes/Chapter3/3.编程范式.md","ref":"studynotes/Chapter3/3.编程范式.md","articles":[{"title":"3.1.装饰器","level":"1.2.3.1","depth":3,"path":"studynotes/Chapter3/3.1.装饰器.md","ref":"studynotes/Chapter3/3.1.装饰器.md","articles":[]},{"title":"3.2.面向对象","level":"1.2.3.2","depth":3,"path":"studynotes/Chapter3/3.2.面向对象.md","ref":"studynotes/Chapter3/3.2.面向对象.md","articles":[]}]},"previous":{"title":"2.1.排序算法","level":"1.2.2.1","depth":3,"path":"studynotes/Chapter2/2.1.排序算法.md","ref":"studynotes/Chapter2/2.1.排序算法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"studynotes/Chapter2/2.2.数据结构.md","mtime":"2019-07-04T16:06:26.701Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T17:18:44.613Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
