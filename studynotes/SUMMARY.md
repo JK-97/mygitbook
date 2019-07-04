@@ -23,6 +23,7 @@
     * [6.3.Redis](Chapter6/6.3.Redis.md)
 * [7.爬虫](Chapter7/7.爬虫.md)
     * [7.1.技术储备](Chapter7/7.1.技术储备.md)
+    * [7.2.scrapy安装](Chapter7/7.2.scrapy安装.md)
 * [8.框架语言](Chapter8/8.框架语言.md)
     * [8.1.什么是WSGI](Chapter8/8.1.什么是WSGI.md)
     * [8.2.常用pythonweb框架](Chapter8/8.2.常用pythonweb框架.md)
