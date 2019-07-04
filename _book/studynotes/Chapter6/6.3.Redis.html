@@ -1,0 +1,793 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.3.Redis · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter7/7.爬虫.html" />
+    
+    
+    <link rel="prev" href="6.2.MYSQL.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    studynotes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../studynote/Chapter1/1.python语言.html">
+            
+                <a href="../studynote/Chapter1/1.python语言.html">
+            
+                    
+                    1.python语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../Chapter1/1.1.python语言特点.html">
+            
+                <a href="../Chapter1/1.1.python语言特点.html">
+            
+                    
+                    1.1.python语言特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../Chapter1/1.2.python2-3差异.html">
+            
+                <a href="../Chapter1/1.2.python2-3差异.html">
+            
+                    
+                    1.2.python2-3差异
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Chapter2/2.算法与数据结构.html">
+            
+                <a href="../Chapter2/2.算法与数据结构.html">
+            
+                    
+                    2.算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../Chapter2/2.1.排序算法.html">
+            
+                <a href="../Chapter2/2.1.排序算法.html">
+            
+                    
+                    2.1.排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../Chapter2/2.2.数据结构.html">
+            
+                <a href="../Chapter2/2.2.数据结构.html">
+            
+                    
+                    2.2.数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Chapter3/3.编程范式.html">
+            
+                <a href="../Chapter3/3.编程范式.html">
+            
+                    
+                    3.编程范式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../Chapter3/3.1.装饰器.html">
+            
+                <a href="../Chapter3/3.1.装饰器.html">
+            
+                    
+                    3.1.装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../Chapter3/3.2.面向对象.html">
+            
+                <a href="../Chapter3/3.2.面向对象.html">
+            
+                    
+                    3.2.面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Chapter4/4.网络协议.html">
+            
+                <a href="../Chapter4/4.网络协议.html">
+            
+                    
+                    4.网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../Chapter4/4.1.基本概念.html">
+            
+                <a href="../Chapter4/4.1.基本概念.html">
+            
+                    
+                    4.1.基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../Chapter4/4.2.HTTP协议.html">
+            
+                <a href="../Chapter4/4.2.HTTP协议.html">
+            
+                    
+                    4.2.HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Chapter5/5.Linux相关.html">
+            
+                <a href="../Chapter5/5.Linux相关.html">
+            
+                    
+                    5.Linux相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../Chapter5/5.1.Linux储备.html">
+            
+                <a href="../Chapter5/5.1.Linux储备.html">
+            
+                    
+                    5.1.Linux储备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../Chapter5/5.2.操作系统内存管理机制.html">
+            
+                <a href="../Chapter5/5.2.操作系统内存管理机制.html">
+            
+                    
+                    5.2.操作系统内存管理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../Chapter5/5.3.操作系统线程和进程常考题.html">
+            
+                <a href="../Chapter5/5.3.操作系统线程和进程常考题.html">
+            
+                    
+                    5.3.操作系统线程和进程常考题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="6.数据库.html">
+            
+                <a href="6.数据库.html">
+            
+                    
+                    6.数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="6.1.数据库种类.html">
+            
+                <a href="6.1.数据库种类.html">
+            
+                    
+                    6.1.数据库种类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="6.2.MYSQL.html">
+            
+                <a href="6.2.MYSQL.html">
+            
+                    
+                    6.2.MYSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6.3" data-path="6.3.Redis.html">
+            
+                <a href="6.3.Redis.html">
+            
+                    
+                    6.3.Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Chapter7/7.爬虫.html">
+            
+                <a href="../Chapter7/7.爬虫.html">
+            
+                    
+                    7.爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../Chapter7/7.1.技术储备.html">
+            
+                <a href="../Chapter7/7.1.技术储备.html">
+            
+                    
+                    7.1.技术储备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../Chapter7/7.2.scrapy安装.html">
+            
+                <a href="../Chapter7/7.2.scrapy安装.html">
+            
+                    
+                    7.2.scrapy安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Chapter8/8.框架语言.html">
+            
+                <a href="../Chapter8/8.框架语言.html">
+            
+                    
+                    8.框架语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../Chapter8/8.1.什么是WSGI.html">
+            
+                <a href="../Chapter8/8.1.什么是WSGI.html">
+            
+                    
+                    8.1.什么是WSGI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../Chapter8/8.2.常用pythonweb框架.html">
+            
+                <a href="../Chapter8/8.2.常用pythonweb框架.html">
+            
+                    
+                    8.2.常用pythonweb框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../Chapter8/8.3.RESTful.html">
+            
+                <a href="../Chapter8/8.3.RESTful.html">
+            
+                    
+                    8.3.RESTful
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Chapter9/9.web高并发、分布式技术.html">
+            
+                <a href="../Chapter9/9.web高并发、分布式技术.html">
+            
+                    
+                    9.web高并发、分布式技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../Chapter9/9.1.什么是微服务.html">
+            
+                <a href="../Chapter9/9.1.什么是微服务.html">
+            
+                    
+                    9.1.什么是微服务？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="../Chapter9/9.2.网络IO.html">
+            
+                <a href="../Chapter9/9.2.网络IO.html">
+            
+                    
+                    9.2.网络IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../python_asyncio_coding/">
+            
+                <a href="../../python_asyncio_coding/">
+            
+                    
+                    python_asyncio_coding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >6.3.Redis</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="63redis">6.3.Redis</h1>
+<h3 id="631redis&#x6982;&#x5FF5;">6.3.1.Redis&#x6982;&#x5FF5;</h3>
+<ul>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#xFF1F;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1F;<ul>
+<li>&#x5E38;&#x7528;&#x7684;&#x5185;&#x5B58;&#x7F13;&#x5B58;&#x6709;Redis&#x548C;Memcached</li>
+<li>&#x7F13;&#x5B58;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x5E76;&#x8BBF;&#x95EE;&#x7684;&#x538B;&#x529B;&#xFF1A;&#x70ED;&#x70B9;&#x6570;&#x636E;</li>
+<li>&#x51CF;&#x5C11;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#xFF1A;&#x5185;&#x5B58;IO&#x901F;&#x5EA6;&#x5FC5;&#x78C1;&#x76D8;&#x5FEB;</li>
+<li>&#x63D0;&#x5347;&#x541E;&#x5410;&#x91CF;&#xFF1A;Redis&#x7B49;&#x5185;&#x5B58;&#x6570;&#x636E;&#x5E93;&#x5355;&#x673A;&#x53EF;&#x4EE5;&#x652F;&#x6491;&#x5F88;&#x5927;&#x5E76;&#x53D1;</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><img src="https://jk-97.github.io/my_note/sources/index_redis&#x4E0E;memcached.png" alt="index_redis&#x4E0E;memcached"></p>
+</blockquote>
+<ul>
+<li><p>Redis&#x7684;&#x5E38;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</p>
+<ul>
+<li>Sring:&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#x7684;KV&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x6BD4;&#x5982;&#x8BA1;&#x6570;&#x5668;</li>
+<li>List&#xFF1A;&#x5B9E;&#x73B0;&#x53CC;&#x5411;&#x94FE;&#x8868;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x7684;&#x5173;&#x6CE8;&#xFF0C;&#x7C89;&#x4E1D;&#x5217;&#x8868;</li>
+<li>Hash&#xFF1A;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x5F7C;&#x6B64;&#x76F8;&#x5173;&#x7684;&#x952E;&#x503C;&#x5BF9;&#xFF0C;HSET key filed value</li>
+<li>Set&#xFF1A;&#x5B58;&#x50A8;&#x4E0D;&#x91CD;&#x590D;&#x5143;&#x7D20;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x7684;&#x5173;&#x6CE8;&#x8005;</li>
+<li>Sorted Set&#xFF1A;&#x5B9E;&#x65F6;&#x4FE1;&#x606F;&#x6392;&#x884C;&#x699C;</li>
+</ul>
+</li>
+<li><p>Redis&#x5185;&#x7F6E;&#x5B9E;&#x73B0;</p>
+<ul>
+<li>C&#x8BED;&#x8A00;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;</li>
+<li>String&#xFF1A;&#x6574;&#x6570;&#x6216;&#x8005;sds(Simple Dynamic String)</li>
+<li>List&#xFF1A;ziplist&#x6216;&#x8005;double linked list</li>
+<li>Hash&#xFF1A;ziplist&#x6216;&#x8005;hashtable</li>
+<li>Set&#xFF1A;intset&#x6216;&#x8005;hashtable</li>
+<li>SortedSet:skiplist &#x8DF3;&#x8DC3;&#x8868;</li>
+</ul>
+</li>
+<li><p>Redis&#x6709;&#x54EA;&#x4E9B;&#x6301;&#x4E45;&#x5316;&#x65B9;&#x5F0F;&#xFF1F;</p>
+<ul>
+<li>&#x5FEB;&#x7167;&#x65B9;&#x5F0F;&#xFF1A;&#x628A;&#x6570;&#x636E;&#x5FEB;&#x7167;&#x653E;&#x5728;&#x78C1;&#x76D8;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;dump.rdb&#xFF0C;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x628A;Redis&#x6570;&#x636E;&#x5E93;&#x72B6;&#x6001;&#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x538B;&#x7F29;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x7F3A;&#x70B9;&#xFF1A;&#x82E5;&#x5B95;&#x673A;&#xFF0C;&#x95F4;&#x9694;&#x5185;&#x7684;&#x6570;&#x636E;&#x5168;&#x90E8;&#x4E22;&#x5931;</li>
+<li>AOF(Append Only File)&#xFF1A;&#x6BCF;&#x4E00;&#x4E2A;&#x5199;&#x547D;&#x4EE4;&#x4FDD;&#x5B58;&#x5230;appendonly.aof&#x4E2D;&#x3002;&#x7F3A;&#x70B9;&#xFF0C;&#x867D;&#x7136;&#x4E0D;&#x4F1A;&#x4E22;&#x5931;&#x5927;&#x91CF;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x6587;&#x4EF6;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x6062;&#x590D;&#x901F;&#x5EA6;&#x6BD4;&#x8F83;&#x6162;</li>
+</ul>
+</li>
+<li><p>Redis&#x4E8B;&#x52A1;</p>
+<ul>
+<li>&#x5C06;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#x6253;&#x5305;&#xFF0C;&#x4E00;&#x6B21;&#x6027;&#xFF0C;&#x6309;&#x5E8F;&#x6267;&#x884C;&#x591A;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x673A;&#x5236;</li>
+<li>Rdis&#x901A;&#x8FC7;MULTI,EXEC,WATCH&#x7B49;&#x547D;&#x4EE4;&#x5B9E;&#x73B0;&#x4E8B;&#x52A1;&#x529F;&#x80FD;</li>
+<li>Python redis-py pipeline = conn.pipeline(transaction =True)</li>
+</ul>
+</li>
+<li><p>Redis&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x5206;&#x5E03;&#x5F0F;&#x9501;</p>
+<ul>
+<li>&#x4F7F;&#x7528;setnx&#x5B9E;&#x73B0;&#x52A0;&#x9501;&#xFF0C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x901A;&#x8FC7;expire&#x6DFB;&#x52A0;&#x8D85;&#x65F6;&#x65F6;&#x95F4;</li>
+<li>&#x9501;&#x7684;valuse&#x503C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7684;uuid&#x6216;&#x8005;&#x5F85;&#x5B9A;&#x7684;&#x547D;&#x540D;</li>
+<li>&#x91CA;&#x653E;&#x9501;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x8FC7;uuid&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x8BE5;&#x9501;&#xFF0C;&#x662F;&#x5219;&#x6267;&#x884C;delete&#x91CA;&#x653E;&#x9501;</li>
+</ul>
+<p><a href="https://blog.csdn.net/gupao123456/article/details/84327254" target="_blank">Redis&#x5206;&#x5E03;&#x5F0F;&#x9501;&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x770B;&#x8FD9;&#x7BC7;&#x5C31;&#x591F;&#x4E86;</a></p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x7684;&#x6A21;&#x5F0F;&#xFF1F;</p>
+<ul>
+<li>Cache Aside&#xFF1A;&#x540C;&#x65F6;&#x66F4;&#x65B0;&#x7F13;&#x5B58;&#x548C;&#x6570;&#x636E;&#x5E93;(&#x5148;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x5E93;&#x540E;&#x66F4;&#x65B0;&#x7F13;&#x5B58;&#xFF0C;&#x5E76;&#x53D1;&#x5199;&#x64CD;&#x4F5C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x7F13;&#x5B58;&#x8BFB;&#x53D6;&#x7684;&#x662F;&#x810F;&#x6570;&#x636E;&#xFF0C;&#x4E00;&#x822C;&#x5148;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x5E93;&#x7136;&#x540E;&#x5220;&#x9664;&#x7F13;&#x5B58;&#xFF0C;&#x4E0B;&#x6B21;&#x8BFB;&#x53D6;&#x65F6;&#x518D;&#x91CD;&#x5EFA;&#x7F13;&#x5B58;)</li>
+<li>Read/Write Throught&#xFF1A;&#x5148;&#x66F4;&#x65B0;&#x7F13;&#x5B58;&#xFF0C;&#x7F13;&#x5B58;&#x8D1F;&#x8D23;&#x540C;&#x6B65;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x5E93;</li>
+<li>Write Behind Caching&#xFF1A;&#x5148;&#x66F4;&#x65B0;&#x7F13;&#x5B58;&#xFF0C;&#x7F13;&#x5B58;&#x9876;&#x8D77;&#x5F02;&#x6B65;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x5E93;</li>
+</ul>
+</li>
+<li><p>&#x7F13;&#x5B58;&#x4F7F;&#x7528;&#x95EE;&#x9898;&#xFF1A;&#x6570;&#x636E;&#x4E00;&#x81F4;&#x6027;&#x95EE;&#x9898;&#xFF1B;&#x7F13;&#x5B58;&#x7A7F;&#x900F;&#xFF0C;&#x51FB;&#x7A7F;&#xFF0C;&#x96EA;&#x5D29;</p>
+<ul>
+<li>&#x7F13;&#x5B58;&#x7A7F;&#x900F;&#xFF1A;&#x5927;&#x91CF;&#x67E5;&#x8BE2;&#x4E0D;&#x5230;&#x7684;&#x6570;&#x636E;&#x8BF7;&#x6C42;&#x843D;&#x5230;&#x540E;&#x7AEF;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x538B;&#x529B;&#x589E;&#x5927;(&#x5F88;&#x591A;&#x65E0;&#x8111;&#x722C;&#x866B;&#x901A;&#x8FC7;&#x81EA;&#x589E;id&#x7684;&#x65B9;&#x5F0F;&#x722C;&#x53D6;&#x7F51;&#x7AD9;&#xFF0C;&#x7F51;&#x7AD9;&#x67E5;&#x4E0D;&#x5230;&#x76F8;&#x5173;id&#x7684;&#x6570;&#x636E;)<ul>
+<li>&#x539F;&#x56E0;&#xFF1A;&#x7531;&#x4E8E;&#x5927;&#x91CF;&#x7F13;&#x5B58;&#x67E5;&#x4E0D;&#x5230;&#x5C31;&#x53BB;&#x6570;&#x636E;&#x5E93;&#x53D6;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x4E5F;&#x6CA1;&#x6709;&#x8981;&#x5DEE;&#x7684;&#x6570;&#x636E;</li>
+<li>&#x89E3;&#x51B3;&#xFF1A;&#x5BF9;&#x4E8E;&#x6CA1;&#x67E5;&#x5230;&#x8FD4;&#x56DE;&#x4E3A;None&#x7684;&#x6570;&#x636E;&#x4E5F;&#x7F13;&#x5B58;</li>
+<li>&#x63D2;&#x5165;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x5220;&#x9664;&#x76F8;&#x5E94;&#x7F13;&#x5B58;&#xFF0C;&#x6216;&#x8005;&#x8BBE;&#x7F6E;&#x8F83;&#x77ED;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;</li>
+</ul>
+</li>
+<li>&#x7F13;&#x5B58;&#x51FB;&#x7A7F;&#xFF1A;&#x67D0;&#x4E9B;&#x975E;&#x5E38;&#x70ED;&#x70B9;&#x7684;&#x6570;&#x636E;key&#x8FC7;&#x671F;&#xFF0C;&#x5927;&#x91CF;&#x8BF7;&#x6C42;&#x6253;&#x5230;&#x540E;&#x7AEF;&#x6570;&#x636E;&#x5E93;<ul>
+<li>&#x539F;&#x56E0;&#xFF1A;&#x70ED;&#x70B9;&#x6570;&#x636E;key&#x5931;&#x6548;&#x5BFC;&#x81F4;&#x5927;&#x91CF;&#x8BF7;&#x6C42;&#x6253;&#x5230;&#x6570;&#x636E;&#x5E93;&#x589E;&#x52A0;&#x6570;&#x636E;&#x5E93;&#x538B;&#x529B;</li>
+<li>&#x89E3;&#x51B3;&#xFF1A;&#x5206;&#x5E03;&#x5F0F;&#x9501;&#xFF1A;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x7EBF;&#x7A0B;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x62FF;&#x53BB;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x7F13;&#x5B58;&#xFF0C;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;&#x3002;&#x5F02;&#x6B65;&#x540E;&#x53F0;&#x66F4;&#x65B0;&#xFF1A;&#x540E;&#x4EE3;&#x4EFB;&#x52A1;&#x9488;&#x5BF9;&#x8FC7;&#x671F;&#x7684;key&#x81EA;&#x52A8;&#x5237;&#x65B0;</li>
+</ul>
+</li>
+<li>&#x7F13;&#x5B58;&#x96EA;&#x5D29;&#xFF1A;&#x7F13;&#x5B58;&#x4E0D;&#x53EF;&#x7528;&#x6216;&#x8005;&#x5927;&#x91CF;&#x7F13;&#x5B58;key&#x540C;&#x65F6;&#x5931;&#x6548;&#xFF0C;&#x5927;&#x91CF;&#x8BF7;&#x6C42;&#x76F4;&#x63A5;&#x6253;&#x5230;&#x6570;&#x636E;&#x5E93;<ul>
+<li>&#x89E3;&#x51B3;&#xFF1A;&#x591A;&#x7EA7;&#x7F13;&#x5B58;&#xFF1A;&#x4E0D;&#x540C;&#x7EA7;&#x522B;&#x7684;key&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x3002;&#x968F;&#x673A;&#x8D85;&#x65F6;&#xFF1A;key&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x968F;&#x673A;&#x8BBE;&#x7F6E;&#xFF0C;&#x9632;&#x6B62;&#x540C;&#x65F6;&#x8D85;&#x65F6;&#x3002;&#x67B6;&#x6784;&#x5C42;&#xFF1A;&#x63D0;&#x5347;&#x7CFB;&#x7EDF;&#x53EF;&#x7528;&#x6027;&#xFF0C;&#x76D1;&#x63A7;&#xFF0C;&#x62A5;&#x8B66;&#x5B8C;&#x5584;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="632redis&#x5206;&#x5E03;&#x5F0F;&#x9501;&#x5E94;&#x7528;">6.3.2.Redis&#x5206;&#x5E03;&#x5F0F;&#x9501;&#x5E94;&#x7528;</h3>
+<ul>
+<li>&#x8BF7;&#x91CC;&#x57FA;&#x4E8E;redis&#x7F16;&#x5199;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x9501;(&#x8981;&#x6C42;&#x652F;&#x6301;&#x8D85;&#x65F6;&#x53C2;&#x6570;)</li>
+<li>&#x5982;&#x679C;Redis&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x5B95;&#x673A;&#x4E86;&#xFF0C;&#x5982;&#x4F55;&#x5904;&#x7406;&#xFF1F;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x4E1A;&#x754C;&#x7684;&#x65B9;&#x6848;&#x5B9E;&#x73B0;&#x5206;&#x5E03;&#x5F0F;&#x9501;&#x4E48;&#xFF1F;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.2.MYSQL.html" class="navigation navigation-prev " aria-label="Previous page: 6.2.MYSQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter7/7.爬虫.html" class="navigation navigation-next " aria-label="Next page: 7.爬虫">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.3.Redis","level":"1.2.6.3","depth":3,"next":{"title":"7.爬虫","level":"1.2.7","depth":2,"path":"studynotes/Chapter7/7.爬虫.md","ref":"studynotes/Chapter7/7.爬虫.md","articles":[{"title":"7.1.技术储备","level":"1.2.7.1","depth":3,"path":"studynotes/Chapter7/7.1.技术储备.md","ref":"studynotes/Chapter7/7.1.技术储备.md","articles":[]},{"title":"7.2.scrapy安装","level":"1.2.7.2","depth":3,"path":"studynotes/Chapter7/7.2.scrapy安装.md","ref":"studynotes/Chapter7/7.2.scrapy安装.md","articles":[]}]},"previous":{"title":"6.2.MYSQL","level":"1.2.6.2","depth":3,"path":"studynotes/Chapter6/6.2.MYSQL.md","ref":"studynotes/Chapter6/6.2.MYSQL.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"studynotes/Chapter6/6.3.Redis.md","mtime":"2019-07-04T16:06:26.701Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T17:18:44.613Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
